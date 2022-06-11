@@ -1,0 +1,20 @@
+[package]
+name = "ptrans"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cosmwasm-std = "0.13.2"
+# cosmwasm-storage = { version = "0.13.2", features = ["iterator"] }
+cw-storage-plus = "0.5.0"
+cw2 = "0.5.0"
+schemars = "0.7"
+bigint = "4"
+serde = { version = "1.0", default-features = false, features = ["derive"] }
+thiserror = { version = "1.0" }
+
+[dev-dependencies]
+cosmwasm-schema = "0.13.2"
+cw-multi-test = "0.5.0"
